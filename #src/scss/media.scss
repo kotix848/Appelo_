@@ -35,6 +35,7 @@
     }
 
     .your-reliable-web-right {
+      height: inherit;
       margin: auto;
       padding-right: 0;
       width: inherit;
@@ -43,8 +44,9 @@
         width: 85%;
         height: inherit;
         margin: auto;
-        padding-bottom: 24px;
+
         .your-reliable-web-right-item {
+          padding-bottom: 30px;
           display: flex;
           align-items: center;
         }

@@ -310,6 +310,7 @@ body {
     padding-bottom: 24px;
   }
   body .section-where-are-you-now .your-reliable-web .your-reliable-web-right {
+    height: inherit;
     margin: auto;
     padding-right: 0;
     width: inherit;
@@ -318,9 +319,9 @@ body {
     width: 85%;
     height: inherit;
     margin: auto;
-    padding-bottom: 24px;
   }
   body .section-where-are-you-now .your-reliable-web .your-reliable-web-right .your-reliable-web-right-list .your-reliable-web-right-item {
+    padding-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
