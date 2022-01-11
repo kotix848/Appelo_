@@ -1,0 +1,105 @@
+.footer {
+  box-sizing: border-box;
+  padding-top: 100px;
+  width: 100%;
+  background-color: #0E0E33;
+  // .footer__top
+  &__top {
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: space-between;
+    // .footer__top_txt
+    &_txt {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 30px;
+      color: #fff;
+    }
+  }
+
+  // .footer__content
+  &__content {
+    width: 100%;
+    flex-wrap: wrap;
+    // .footer__content_list
+    &_list {
+      margin-top: 150px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    // .footer__content_item
+    &_item {
+      width: 33%;
+      box-sizing: border-box;
+      padding-right: 62px;
+    }
+
+    // .footer__content_item_title
+    &_item_title {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+      padding-bottom: 20px;
+    }
+
+    // .footer__content_item_card
+    &_item_card {
+      align-items: center;
+      width: 320px;
+      height: 50px;
+      display: flex;
+    }
+
+    // .footer__content_item_card_name
+    &_item_card_name {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 28px;
+      color: #FFFFFF;
+    }
+  }
+
+  // .footer__bottom
+  &__bottom {
+    height: 64px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    padding-bottom: 31px;
+    align-items: flex-end;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    // .footer__bottom_list
+    &_list {
+      width: 325px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    // .footer__bottom_item
+    &_item {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

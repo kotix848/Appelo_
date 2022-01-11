@@ -1,0 +1,117 @@
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn { /* используем flex для центрирования содержимого */
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 30px 0;
+  list-style: none;
+  text-align: left;
+  background-color: #0e0e33;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  .menu__box_logo {
+    width: 182px;
+    height: 60px;
+    display: block;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 18px 24px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.main__menu_btn {
+  button {
+    margin-top: 10px;
+    width: 138px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #0a8bfe;
+    color: #fff;
+    background-color: #0a8bfe;
+    margin-left: 24px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: transparent;
+      color: #0a8bfe;
+      border: 1px solid #0a8bfe;
+    }
+  }
+}
