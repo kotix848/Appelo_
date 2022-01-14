@@ -1,56 +1,172 @@
-#menu__toggle {
-  display: none;
-}
-
-.hamburger-menu {
-  display: none;
-}
-
 @media (max-width: 1240px) {
-  .inner {
-    width: 90%;
+  .section-where-are-you {
+    height: inherit !important;
   }
-  .main__menu_logo {
-    width: 136.5px;
-    height: 45px;
+  .section-where-are-you-block {
+
   }
-  body .inner .main__menu .main__menu_right {
-    display: none;
+  .section-where-are-you-design-develop-item-txt {
+
   }
-  body .inner .hamburger-menu {
-    display: block;
-    color: #fff;
-    font-size: 16px;
+  .section-cards-list {
+
   }
-  body .section-where-are-you-now .your-reliable-web {
-    flex-wrap: wrap;
-    height: inherit;
-    padding-top: 24px;
-    padding-bottom: 24px;
+  .we-re-proud-of-our-work-block {
+
+  }
+  .your-reliable-web {
 
     .your-reliable-web-left {
-      margin: auto;
-      text-align: center;
-      padding-bottom: 24px;
+
     }
 
     .your-reliable-web-right {
-      height: inherit;
-      margin: auto;
-      padding-right: 0;
-      width: inherit;
 
       .your-reliable-web-right-list {
-        width: 85%;
-        height: inherit;
-        margin: auto;
 
         .your-reliable-web-right-item {
-          padding-bottom: 30px;
-          display: flex;
-          align-items: center;
+
         }
       }
     }
+  }
+  .section-where-are-you-design-develop-item {
+    height: inherit !important;
+  }
+  .section-cards-item img {
+    padding-top: 0;
+    margin: auto !important;
+    display: block !important;
+    width: 100%;
+  }
+  .resources-list {
+
+  }
+  .resources-item {
+    margin: 20px auto;
+
+    img {
+      padding-top: 10px;
+    }
+  }
+  .request-a-callback-from-our-banner-form {
+  }
+  .section-we-value-our-relationships-regional-partnerships-cards-item img {
+
+  }
+  .section-we-value-our-relationships-regional-partnerships-cards-list {
+
+
+    .section-we-value-our-relationships-regional-partnerships-cards-item {
+
+    }
+
+    .section-we-value-our-relationships-logo-block-content {
+      padding: 0;
+      width: inherit;
+    }
+
+
+
+    .section-we-value-our-relationships-logo-block-list-1 {
+    }
+
+    .section-we-value-our-relationships-logo-block-list-2 {
+    }
+
+    .section-we-value-our-relationships-block-title {
+      width: 100% !important;
+    }
+
+    .section-we-value-our-relationships-block-post-title {
+      width: 80%;
+    }
+
+    .section-we-value-our-relationships-logo-block {
+
+    }
+
+    .we-re-proud-of-our-work-block-list {
+      margin-bottom: 80px !important;
+      width: 100% !important;
+    }
+
+    .section-cards-item {
+      height: inherit;
+
+      h6 {
+        font-size: 19px;
+      }
+
+      .section-cards-item-post-title {
+        padding-bottom: 25px;
+      }
+
+      .section-cards-item-post-title-mini {
+        padding-bottom: 35px;
+      }
+    }
+
+    .section-cards-item-title {
+      padding-right: 41px;
+    }
+
+    .inner {
+      width: 90%;
+    }
+
+    .main__menu_logo {
+      width: 136.5px;
+      height: 45px;
+    }
+
+    .main__menu .main__menu_right {
+      display: none;
+    }
+
+    .hamburger-menu {
+      display: block;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .section-where-are-you {
+      height: inherit !important;
+
+      .section-where-are-you-btn {
+        margin-bottom: 100px;
+      }
+    }
+
+    .section-where-are-you-design-develop-txt {
+      width: 75%;
+    }
+
+  }
+  .we-re-industry-approved-content {
+    width: 50%;
+  }
+  .request-a-callback-from-our-banner-form-title {
+
+  }
+  .request-a-callback-from-our-banner-form-input {
+
+  }
+  .request-a-callback-from-our-banner-form-textarea {
+
+  }
+}
+
+@media (max-width: 885px) {
+  .we-re-industry-approved-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .request-a-callback-from-our-banner-form-button {
+    margin-top: 20px;
+  }
+  .request-a-callback-from-our-banner-form {
+    width: 65%;
   }
 }

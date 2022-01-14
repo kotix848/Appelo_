@@ -10,10 +10,18 @@
     padding-top: 55px;
     justify-content: space-between;
 
+    @media (max-width: 1240px) {
+      width: 90%;
+      margin: auto;
+    }
+
     .main__menu_right {
       display: flex;
       justify-content: space-between;
       width: 654px;
+      @media (max-width: 1240px) {
+        display: none;
+      }
 
       .main__menu_list {
         align-items: center;

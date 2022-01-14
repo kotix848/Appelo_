@@ -7,7 +7,8 @@ let path = {
         css: project_folder + "/css/",
         js: project_folder + "/js/",
         img: project_folder + "/img/",
-        fonts: project_folder + "/fonts/"
+        fonts: project_folder + "/fonts/",
+        js: project_folder + "/js/"
     },
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -57,6 +58,12 @@ function images() {
         .pipe(browsersync.stream())
 }
 
+function js() {
+    return src(path.src.js)
+        .pipe(dest(path.build.js))
+        .pipe(browsersync.stream())
+}
+
 function css() {
     return src(path.src.css)
         .pipe(
@@ -85,15 +92,17 @@ function watchFiles(params) {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.img], images);
+    gulp.watch([path.watch.js], js);
 }
 
 function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(css, html, images));
+let build = gulp.series(clean, gulp.parallel(css, html, images, js));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.js = js;
 exports.images = images;
 exports.css = css;
 exports.html = html;
