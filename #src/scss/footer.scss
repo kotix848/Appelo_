@@ -41,9 +41,8 @@
     &_item {
       width: 33%;
       box-sizing: border-box;
-      padding-right: 62px;
       @media (max-width: 1240px) {
-        width: 44%;
+        width: inherit;
         margin: auto;
         padding-bottom: 40px;
         text-align: center;
@@ -52,6 +51,7 @@
 
     // .footer__content_item_title
     &_item_title {
+      text-align: center;
       font-family: Roboto, sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -67,6 +67,14 @@
       width: 320px;
       height: 50px;
       display: flex;
+      margin: auto;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     // .footer__content_item_card_name

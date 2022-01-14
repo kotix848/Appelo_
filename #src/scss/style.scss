@@ -85,15 +85,12 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .inner {
-  max-width: 1220px;
+  max-width: 1160px;
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
   @media (max-width: 1240px) {
     max-width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-
   }
 }
 
@@ -340,6 +337,10 @@ hr {
       justify-content: space-between;
       @media (max-width: 1240px) {
         max-width: 70% !important;
+      }
+      @media (max-width: 600px) {
+        display: block;
+        text-align: center;
       }
 
       h5:hover {
@@ -723,6 +724,7 @@ hr {
       @media (max-width: 1240px) {
         flex: content-box;
         justify-content: space-between;
+        padding-bottom: 40px;
       }
 
       img {
@@ -788,6 +790,16 @@ hr {
     margin: auto;
     @media (max-width: 1240px) {
       width: 50%;
+    }
+    @media (max-width: 950px) {
+      width: 80%;
+    }
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+    @media (max-width: 345px) {
+      margin-bottom: 30px;
+      height: 600px;
     }
 
     .request-a-callback-from-our-banner-form-title {
@@ -913,6 +925,12 @@ hr {
     height: inherit;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  @media (max-width: 595px) {
+    margin-top: 380px;
+  }
+  @media (max-width: 500px) {
+    margin-top: 450px;
   }
 
   .we-re-industry-approved-content {
