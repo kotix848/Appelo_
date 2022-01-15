@@ -168,6 +168,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.footer__wrapper {
+  width: 1160px;
+  margin: auto;
+}
+@media (max-width: 1240px) {
+  .footer__wrapper {
+    width: 100%;
+  }
+}
+
 .footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -185,6 +195,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1240px) {
+  .footer__top {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
 .footer__top_txt {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -192,6 +209,12 @@ body {
   font-size: 15px;
   line-height: 30px;
   color: #fff;
+}
+@media (max-width: 1240px) {
+  .footer__top_txt {
+    font-size: 21px;
+    padding-bottom: 15px;
+  }
 }
 .footer__content {
   width: 100%;
@@ -1271,9 +1294,7 @@ hr {
 @media (max-width: 1240px) {
   .section-we-value-our-relationships-regional-partnerships-cards .section-we-value-our-relationships-regional-partnerships-cards-list {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     height: inherit;
   }
 }
@@ -1290,19 +1311,18 @@ hr {
 }
 @media (max-width: 1240px) {
   .section-we-value-our-relationships-regional-partnerships-cards .section-we-value-our-relationships-regional-partnerships-cards-list .section-we-value-our-relationships-regional-partnerships-cards-item {
-    -webkit-box-flex: content-box;
-        -ms-flex: content-box;
-            flex: content-box;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-bottom: 40px;
+    margin: 30px auto;
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .section-we-value-our-relationships-regional-partnerships-cards .section-we-value-our-relationships-regional-partnerships-cards-list .section-we-value-our-relationships-regional-partnerships-cards-item {
+    width: 100%;
   }
 }
 @media (max-width: 1240px) {
   .section-we-value-our-relationships-regional-partnerships-cards .section-we-value-our-relationships-regional-partnerships-cards-list .section-we-value-our-relationships-regional-partnerships-cards-item img {
     margin: auto;
-    padding-top: 25px;
   }
 }
 .section-we-value-our-relationships-regional-partnerships-cards .section-we-value-our-relationships-regional-partnerships-cards-list .section-we-value-our-relationships-regional-partnerships-cards-item:hover {
@@ -1576,10 +1596,20 @@ hr {
 }
 @media (max-width: 1240px) {
   .we-re-industry-approved {
-    margin-top: 250px;
+    margin-top: 1250px;
     height: inherit;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .we-re-industry-approved {
+    margin-top: 1280px;
+  }
+}
+@media (max-width: 609px) {
+  .we-re-industry-approved {
+    margin-top: 1330px;
   }
 }
 @media (max-width: 595px) {
@@ -1587,9 +1617,29 @@ hr {
     margin-top: 380px;
   }
 }
+@media (max-width: 596px) {
+  .we-re-industry-approved {
+    margin-top: 1330px;
+  }
+}
 @media (max-width: 500px) {
   .we-re-industry-approved {
-    margin-top: 450px;
+    margin-top: 1330px;
+  }
+}
+@media (max-width: 458px) {
+  .we-re-industry-approved {
+    margin-top: 1330px;
+  }
+}
+@media (max-width: 394px) {
+  .we-re-industry-approved {
+    margin-top: 1400px;
+  }
+}
+@media (max-width: 330px) {
+  .we-re-industry-approved {
+    margin-top: 1460px;
   }
 }
 .we-re-industry-approved .we-re-industry-approved-content {
