@@ -4,19 +4,14 @@
 @import "footer";
 @import "menu";
 
-#menu__toggle {
-  display: none;
-}
-
 .hamburger-menu {
   display: none;
 }
 
 @media (max-width: 1240px) {
-  #menu__toggle {
-    display: block;
+  .main__menu_logo {
+    width: 125px;
   }
-
   .hamburger-menu {
     display: block;
   }
@@ -146,8 +141,9 @@ hr {
   padding-top: 240px;
   padding-bottom: 240px;
   @media (max-width: 1240px) {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    text-align: center;
   }
 
   .main__content_txt {
@@ -502,7 +498,7 @@ hr {
     height: 656px;
     background-color: #fff;
     @media (max-width: 800px) {
-      width: 70%;
+      width: 100%;
       height: inherit;
       padding-bottom: 40px;
       margin: auto;
@@ -796,7 +792,7 @@ hr {
       width: 80%;
     }
     @media (max-width: 550px) {
-      width: 100%;
+      width: 95%;
     }
     @media (max-width: 345px) {
       margin-bottom: 30px;
@@ -1061,7 +1057,7 @@ hr {
       }
       @media (max-width: 800px) {
         margin: auto;
-        width: 75%;
+        width: 100%;
         height: inherit;
         padding-bottom: 40px;
       }

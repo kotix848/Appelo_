@@ -351,6 +351,7 @@ body {
 /* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
+  display: none;
 }
 
 /* стилизуем кнопку */
@@ -476,17 +477,13 @@ body {
   border: 1px solid #0a8bfe;
 }
 
-#menu__toggle {
-  display: none;
-}
-
 .hamburger-menu {
   display: none;
 }
 
 @media (max-width: 1240px) {
-  #menu__toggle {
-    display: block;
+  .main__menu_logo {
+    width: 125px;
   }
 
   .hamburger-menu {
@@ -635,8 +632,9 @@ hr {
 }
 @media (max-width: 1240px) {
   .main__content {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    text-align: center;
   }
 }
 .main__content .main__content_txt {
@@ -1054,7 +1052,7 @@ hr {
 }
 @media (max-width: 800px) {
   .section-cards-list .section-cards-item {
-    width: 70%;
+    width: 100%;
     height: inherit;
     padding-bottom: 40px;
     margin: auto;
@@ -1391,7 +1389,7 @@ hr {
 }
 @media (max-width: 550px) {
   .request-a-callback-from-our-banner .request-a-callback-from-our-banner-form {
-    width: 100%;
+    width: 95%;
   }
 }
 @media (max-width: 345px) {
@@ -1766,7 +1764,7 @@ hr {
 @media (max-width: 800px) {
   .section-resources .resources-list .resources-item {
     margin: auto;
-    width: 75%;
+    width: 100%;
     height: inherit;
     padding-bottom: 40px;
   }
