@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
     $('.content_toggle').click(function () {
         $('.content_block').slideToggle(300, function () {
             if ($(this).is(':hidden')) {
@@ -9,4 +9,8 @@ $(document).ready(function () {
         });
         return false;
     });
+});
+*/
+$("p").click(function () {
+    $(this).toggleClass("highlight");
 });

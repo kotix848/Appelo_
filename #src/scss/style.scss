@@ -1182,19 +1182,16 @@ hr {
         display: flex;
       }
 
-      .content_block {
-        display: none;
-        padding-top: 12px;
-        padding-bottom: 18px;
-        padding-left: 25px;
-        padding-right: 25px;
-      }
     }
   }
 }
 
-.hide {
+.content_block {
   display: none;
+  padding-top: 12px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .active {

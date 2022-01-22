@@ -286,6 +286,9 @@ body {
   line-height: 28px;
   color: #FFFFFF;
 }
+.footer__content_item_card_name a:hover {
+  text-decoration: underline;
+}
 .footer__bottom {
   padding-top: 10px;
   height: 64px;
@@ -1894,16 +1897,13 @@ hr {
   display: -ms-flexbox;
   display: flex;
 }
-.section-faq .section-faq-list .section-faq-item .content_block {
+
+.content_block {
   display: none;
   padding-top: 12px;
   padding-bottom: 18px;
   padding-left: 25px;
   padding-right: 25px;
-}
-
-.hide {
-  display: none;
 }
 
 .active {
